@@ -1,0 +1,317 @@
+the num of samples is  5000
+min 14
+max 84
+now we create the bottom level bins, with start value 0, ending value 92, step 1
+[  0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   1   0   7
+  11  25  33  52  65  76  99  75 115  96 128 141 127 125 129 143 116 132
+ 134 126 114 130 126 111  88 119 123 107 109 127 124 114 120 130 114 129
+ 149 123 111 113 125  89  88  76  54  54  39  28  27  16  14  12  11   7
+   9   5   1   2   0   1   1   0   0   2   0   0   1   0   0   0   0   0
+   0]
+now we display the bottom bins histogram
+now we create the hierarchy
+num_levels 1
+granularities [1]
+now we have established the consisted hierarchy with fanout 16
+now we run the experiment with range_epsilon: 0.8
+now we run the query [57,63)
+the true count is 545
+the hierarchical estimated count is 540.548868
+now we run the query [57,64)
+the true count is 599
+the hierarchical estimated count is 594.126914
+now we run the query [19,74)
+the true count is 4972
+the hierarchical estimated count is 4963.904661
+now we run the query [28,67)
+the true count is 4262
+the hierarchical estimated count is 4258.315547
+now we run the query [55,74)
+the true count is 1001
+the hierarchical estimated count is 992.865286
+now we run the query [42,75)
+the true count is 2555
+the hierarchical estimated count is 2553.687667
+now we run the query [50,65)
+the true count is 1514
+the hierarchical estimated count is 1517.921575
+now we run the query [58,73)
+the true count is 649
+the hierarchical estimated count is 640.634328
+now we run the query [33,84)
+the true count is 3693
+the hierarchical estimated count is 3691.054683
+now we run the query [23,49)
+the true count is 3040
+the hierarchical estimated count is 3034.550177
+now we run the query [60,61)
+the true count is 88
+the hierarchical estimated count is 87.685177
+now we run the query [29,45)
+the true count is 1984
+the hierarchical estimated count is 1978.779210
+now we run the query [34,64)
+the true count is 3375
+the hierarchical estimated count is 3376.962934
+now we run the query [20,31)
+the true count is 1007
+the hierarchical estimated count is 1002.077996
+now we run the query [21,36)
+the true count is 1619
+the hierarchical estimated count is 1617.264028
+now we run the query [33,34)
+the true count is 143
+the hierarchical estimated count is 145.850676
+now we run the query [60,67)
+the true count is 366
+the hierarchical estimated count is 363.646467
+now we run the query [38,56)
+the true count is 2157
+the hierarchical estimated count is 2164.115493
+now we run the query [47,77)
+the true count is 2011
+the hierarchical estimated count is 2013.565474
+now we run the query [52,62)
+the true count is 1117
+the hierarchical estimated count is 1116.226426
+now we run the query [32,73)
+the true count is 3810
+the hierarchical estimated count is 3807.601014
+now we run the query [81,84)
+the true count is 2
+the hierarchical estimated count is -0.740367
+now we run the query [45,48)
+the true count is 343
+the hierarchical estimated count is 342.951926
+now we run the query [71,73)
+the true count is 16
+the hierarchical estimated count is 9.214275
+now we run the query [75,77)
+the true count is 2
+the hierarchical estimated count is 3.743229
+now we run the query [38,53)
+the true count is 1756
+the hierarchical estimated count is 1758.573993
+now we run the query [71,72)
+the true count is 7
+the hierarchical estimated count is 5.846584
+now we run the query [66,75)
+the true count is 102
+the hierarchical estimated count is 99.859094
+now we run the query [32,73)
+the true count is 3810
+the hierarchical estimated count is 3807.601014
+now we run the query [26,61)
+the true count is 4195
+the hierarchical estimated count is 4192.242954
+now we run the query [32,36)
+the true count is 520
+the hierarchical estimated count is 524.847226
+now we run the query [30,64)
+the true count is 3899
+the hierarchical estimated count is 3900.222394
+now we run the query [51,59)
+the true count is 994
+the hierarchical estimated count is 995.841334
+now we run the query [32,59)
+the true count is 3286
+the hierarchical estimated count is 3288.963051
+now we run the query [26,57)
+the true count is 3780
+the hierarchical estimated count is 3782.269347
+now we run the query [28,71)
+the true count is 4315
+the hierarchical estimated count is 4315.629975
+now we run the query [65,84)
+the true count is 136
+the hierarchical estimated count is 129.961681
+now we run the query [36,63)
+the true count is 3073
+the hierarchical estimated count is 3070.839054
+now we run the query [44,62)
+the true count is 2071
+the hierarchical estimated count is 2072.732309
+now we run the query [46,71)
+the true count is 2096
+the hierarchical estimated count is 2101.103933
+now we run the query [29,71)
+the true count is 4187
+the hierarchical estimated count is 4187.374528
+now we run the query [75,81)
+the true count is 4
+the hierarchical estimated count is 2.731379
+now we run the query [78,81)
+the true count is 1
+the hierarchical estimated count is 0.375575
+now we run the query [41,46)
+the true count is 548
+the hierarchical estimated count is 546.443970
+now we run the query [29,39)
+the true count is 1287
+the hierarchical estimated count is 1285.748826
+now we run the query [72,84)
+the true count is 21
+the hierarchical estimated count is 13.272077
+now we run the query [23,34)
+the true count is 1254
+the hierarchical estimated count is 1249.985627
+now we run the query [15,21)
+the true count is 77
+the hierarchical estimated count is 74.646874
+now we run the query [56,74)
+the true count is 878
+the hierarchical estimated count is 867.544926
+now we run the query [27,70)
+the true count is 4400
+the hierarchical estimated count is 4399.683157
+now we run the query [55,57)
+the true count is 234
+the hierarchical estimated count is 234.155747
+now we run the query [78,81)
+the true count is 1
+the hierarchical estimated count is 0.375575
+now we run the query [59,62)
+the true count is 253
+the hierarchical estimated count is 251.383965
+now we run the query [29,50)
+the true count is 2565
+the hierarchical estimated count is 2558.609932
+now we run the query [15,65)
+the true count is 4862
+the hierarchical estimated count is 4854.607394
+now we run the query [70,74)
+the true count is 32
+the hierarchical estimated count is 27.443133
+now we run the query [77,84)
+the true count is 4
+the hierarchical estimated count is -1.752217
+now we run the query [32,38)
+the true count is 780
+the hierarchical estimated count is 782.186532
+now we run the query [70,78)
+the true count is 36
+the hierarchical estimated count is 31.466373
+now we run the query [42,63)
+the true count is 2332
+the hierarchical estimated count is 2333.859561
+now we run the query [19,37)
+the true count is 1811
+the hierarchical estimated count is 1808.285482
+now we run the query [31,56)
+the true count is 3062
+the hierarchical estimated count is 3069.957361
+now we run the query [20,67)
+the true count is 4873
+the hierarchical estimated count is 4866.805642
+now we run the query [69,70)
+the true count is 12
+the hierarchical estimated count is 16.551249
+now we run the query [17,36)
+the true count is 1695
+the hierarchical estimated count is 1692.785524
+now we run the query [35,40)
+the true count is 636
+the hierarchical estimated count is 634.953432
+now we run the query [43,78)
+the true count is 2470
+the hierarchical estimated count is 2471.389578
+now we run the query [72,74)
+the true count is 14
+the hierarchical estimated count is 9.613629
+now we run the query [18,63)
+the true count is 4761
+the hierarchical estimated count is 4756.561103
+now we run the query [25,51)
+the true count is 3099
+the hierarchical estimated count is 3096.309639
+now we run the query [29,33)
+the true count is 522
+the hierarchical estimated count is 515.438505
+now we run the query [48,54)
+the true count is 731
+the hierarchical estimated count is 738.965934
+now we run the query [51,75)
+the true count is 1524
+the hierarchical estimated count is 1522.392669
+now we run the query [78,81)
+the true count is 1
+the hierarchical estimated count is 0.375575
+now we run the query [45,71)
+the true count is 2203
+the hierarchical estimated count is 2208.595319
+now we run the query [45,59)
+the true count is 1695
+the hierarchical estimated count is 1699.171632
+now we run the query [45,68)
+the true count is 2166
+the hierarchical estimated count is 2168.440061
+now we run the query [58,72)
+the true count is 640
+the hierarchical estimated count is 637.266636
+now we run the query [77,78)
+the true count is 1
+the hierarchical estimated count is -1.387425
+now we run the query [56,65)
+the true count is 749
+the hierarchical estimated count is 741.241693
+now we run the query [77,84)
+the true count is 4
+the hierarchical estimated count is -1.752217
+now we run the query [32,37)
+the true count is 654
+the hierarchical estimated count is 658.227772
+now we run the query [75,84)
+the true count is 6
+the hierarchical estimated count is 1.991012
+now we run the query [47,68)
+the true count is 1950
+the hierarchical estimated count is 1952.539339
+now we run the query [70,77)
+the true count is 35
+the hierarchical estimated count is 32.853798
+now we run the query [40,46)
+the true count is 674
+the hierarchical estimated count is 670.681128
+now we run the query [81,84)
+the true count is 2
+the hierarchical estimated count is -0.740367
+now we run the query [52,58)
+the true count is 739
+the hierarchical estimated count is 742.846095
+now we run the query [74,75)
+the true count is 1
+the hierarchical estimated count is 1.667436
+now we run the query [62,84)
+the true count is 283
+the hierarchical estimated count is 277.158382
+now we run the query [24,47)
+the true count is 2713
+the hierarchical estimated count is 2707.765110
+now we run the query [68,77)
+the true count is 61
+the hierarchical estimated count is 61.026135
+now we run the query [33,70)
+the true count is 3654
+the hierarchical estimated count is 3659.953102
+now we run the query [52,56)
+the true count is 515
+the hierarchical estimated count is 522.181434
+now we run the query [38,60)
+the true count is 2595
+the hierarchical estimated count is 2595.239311
+now we run the query [68,70)
+the true count is 26
+the hierarchical estimated count is 28.172337
+now we run the query [63,71)
+the true count is 201
+the hierarchical estimated count is 202.700459
+now we run the query [39,63)
+the true count is 2699
+the hierarchical estimated count is 2698.925244
+now we run the query [47,59)
+the true count is 1479
+the hierarchical estimated count is 1483.270910
+now we run the query [41,73)
+the true count is 2660
+the hierarchical estimated count is 2656.762178
+in 100 range queries, the mean absolute err is 3.432172, and the var of err is 5.587409

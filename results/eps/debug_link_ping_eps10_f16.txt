@@ -1,0 +1,468 @@
+the num of samples is  5000
+min 30
+max 5000
+now we create the bottom level bins, with start value 0, ending value 5002, step 1
+[  0   0   0 ...   0   0 134]
+now we display the bottom bins histogram
+now we create the hierarchy
+3
+[1, 16, 256]
+granularity is  1
+num of slots is  5001
+debug: [134]
+granularity is  16
+num of slots is  313
+debug: [  0   0   0   0   0   0   0   0 134]
+granularity is  256
+num of slots is  20
+debug: [  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+   0   0   0   0   0   0   0   0   0   0 134]
+[array([  0.,   0.,   0., ...,   0.,   0., 134.]), array([0.000e+00, 2.000e+00, 3.940e+02, 1.769e+03, 1.436e+03, 5.470e+02,
+       1.830e+02, 1.230e+02, 5.000e+01, 3.000e+01, 1.700e+01, 1.400e+01,
+       8.000e+00, 1.000e+01, 1.300e+01, 3.000e+00, 2.000e+00, 6.000e+00,
+       3.000e+00, 4.000e+00, 4.000e+00, 2.000e+00, 2.000e+00, 5.000e+00,
+       1.000e+00, 2.000e+00, 2.000e+00, 4.000e+00, 2.000e+00, 4.000e+00,
+       3.000e+00, 4.000e+00, 3.000e+00, 4.000e+00, 0.000e+00, 1.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 4.000e+00, 0.000e+00, 0.000e+00,
+       3.000e+00, 1.000e+00, 3.000e+00, 2.000e+00, 0.000e+00, 1.000e+00,
+       0.000e+00, 1.000e+00, 2.000e+00, 1.000e+00, 0.000e+00, 0.000e+00,
+       1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 2.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 1.000e+00, 2.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 1.000e+00, 0.000e+00, 2.000e+00, 0.000e+00, 2.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00, 3.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       3.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 3.000e+01, 9.000e+00,
+       3.000e+00, 0.000e+00, 1.000e+00, 1.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00,
+       1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 4.000e+00, 1.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 1.000e+00, 9.500e+01, 0.000e+00, 1.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 2.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 3.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 2.000e+00,
+       2.000e+00, 0.000e+00, 1.000e+00, 5.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       1.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 3.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 1.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00, 0.000e+00,
+       1.340e+02]), array([4.599e+03, 5.000e+01, 2.200e+01, 7.000e+00, 8.000e+00, 5.000e+00,
+       4.700e+01, 3.000e+00, 5.000e+00, 9.700e+01, 3.000e+00, 0.000e+00,
+       3.000e+00, 1.100e+01, 0.000e+00, 1.000e+00, 4.000e+00, 1.000e+00,
+       0.000e+00, 1.340e+02])]
+noisy: [array([ 5.94127221e-01, -9.03744361e-02,  4.29190669e-01, ...,
+        2.18514215e-01, -2.25615028e-01,  1.34474948e+02]), array([-6.23812831e-01,  1.97745828e+00,  3.93904068e+02,  1.76889683e+03,
+        1.43592014e+03,  5.46974852e+02,  1.83422961e+02,  1.22819110e+02,
+        5.03828598e+01,  3.00224150e+01,  1.74483414e+01,  1.41591446e+01,
+        8.01229688e+00,  1.03971258e+01,  1.30029124e+01,  3.06127407e+00,
+        2.68060654e+00,  6.18108180e+00,  2.82584869e+00,  4.13549875e+00,
+        3.59452960e+00,  1.52175134e+00,  1.88241635e+00,  4.65346192e+00,
+        2.11624250e-01,  2.05671099e+00,  1.98564558e+00,  3.94173892e+00,
+        1.98041010e+00,  4.02511063e+00,  3.82986200e+00,  3.47447446e+00,
+        3.18932068e+00,  3.86005026e+00,  5.34893349e-02,  1.09630744e+00,
+        9.32795388e-01, -2.05164345e-01, -1.12390661e-01,  4.62713389e+00,
+        1.89633073e-02,  5.71540128e-02,  2.66483588e+00,  6.37503794e-01,
+        2.92542758e+00,  2.29405084e+00,  1.28429948e-01,  9.52800250e-01,
+       -1.04315214e+00,  5.25491088e-01,  2.82397744e+00,  1.02894805e+00,
+        3.06994362e-01, -2.46784848e-01,  7.86395911e-01, -2.23570466e-01,
+        6.32241129e-01,  1.03609691e+00,  1.31902077e+00,  6.27544565e-01,
+        3.58775199e-01,  4.51229414e-01,  1.83531010e-02,  3.95657500e-01,
+        1.53134703e-01, -4.10160616e-01, -3.31681766e-01, -5.28873620e-01,
+        1.17294468e+00,  2.07799996e+00, -3.69670394e-01,  4.78143458e-01,
+       -1.18272215e+00,  6.73361075e-01,  6.31599391e-02,  2.03859832e+00,
+        6.89633362e-02,  2.05460830e+00, -5.09204982e-01,  2.70694115e-02,
+        2.67634912e-01,  5.66121799e-01,  8.71404957e-01,  2.95837101e+00,
+        3.36195991e-02,  2.08056182e-01, -1.33436441e-01, -2.44981794e-01,
+        5.53466959e-01,  8.94935511e-02,  7.23892776e-01,  1.26079617e-02,
+        8.56829015e-01, -1.02913357e-01, -1.00121362e-01,  2.10988849e-01,
+        3.47603373e+00,  3.87758036e-02,  5.94543033e-01,  3.89881235e-01,
+        1.16279900e-01, -3.59143403e-01, -1.33549443e-01,  2.01635554e-01,
+       -8.27627993e-01, -8.39752362e-02,  2.98443624e+01,  8.51292344e+00,
+        3.10872140e+00,  1.39088234e-01,  6.29370072e-01,  3.18540565e-01,
+        3.81993615e-01,  5.18586373e-01, -1.40733985e-01, -2.77402716e-01,
+       -4.23544086e-01,  1.10900814e+00,  3.51288465e-02, -3.57717399e-02,
+        2.99257364e-01, -3.92981942e-02,  8.84961180e-01,  2.69298181e-02,
+       -9.48157508e-02,  7.27598599e-01,  7.90230009e-01,  5.94859528e-02,
+       -3.72812801e-02,  1.11247663e-01, -7.78744464e-02, -7.08234367e-01,
+        1.29648305e-01,  4.67385427e-01,  1.53438768e-02, -7.95294479e-01,
+        1.69733026e-01, -3.48917568e-01,  1.48819834e-01,  3.03136869e-01,
+        1.00871473e-01, -1.75816189e-01,  3.95191834e+00,  1.01700196e+00,
+       -2.79623261e-01,  5.61338234e-01,  4.08495270e-01,  7.86254615e-01,
+       -3.68315665e-01,  3.43220600e-01,  4.43588564e-02, -1.00114128e-01,
+       -8.90019306e-06, -2.93432199e-01,  2.02906769e+00, -4.32871744e-02,
+        3.20629764e-01,  7.94730593e-01,  1.35614808e+00,  9.51848205e+01,
+       -1.43765130e-01,  6.83144039e-01, -7.27447108e-01,  1.59398342e-01,
+        4.81683875e-02,  3.11810463e-01,  1.82296234e+00, -4.11726998e-02,
+        1.07942947e+00,  1.43370953e-01,  1.73612159e-01, -6.50555261e-01,
+        1.37875314e-01, -3.65660588e-02,  2.20939498e-01,  7.54975206e-03,
+       -3.02070943e-01,  7.51325342e-01,  1.04316724e-01,  1.96480678e-01,
+       -8.30887115e-02,  7.41027235e-02, -2.08855178e-01,  1.80783385e-01,
+        3.39281570e-01, -9.52745365e-02,  1.93759382e-01, -2.20810208e-01,
+       -2.82879051e-01,  1.75196674e-01,  2.33272026e-01, -2.01631534e-02,
+        6.16688765e-01, -2.60215061e-02,  6.41404233e-02, -5.53568775e-02,
+       -8.76342635e-01, -1.14234746e-01,  1.73979635e-01, -1.53915146e-01,
+       -8.82935763e-01,  2.61595851e+00,  9.25945827e-02, -7.22923762e-01,
+       -8.22448766e-01, -1.10088914e+00, -5.65469644e-01, -3.60707463e-02,
+        1.28827197e-01,  2.40179231e+00,  2.35445114e+00, -8.30576093e-01,
+        1.04094202e+00,  4.93742302e+00, -1.02763412e-01, -4.00811681e-01,
+        1.01847729e+00, -2.84502391e-01, -2.34824757e-01,  7.52355068e-01,
+        4.70025281e-01, -6.77909004e-02,  1.14396478e+00, -1.47070761e-02,
+        7.62522651e-01,  1.07540556e-01,  4.31321190e-01,  1.01713100e-01,
+       -3.86860497e-04,  2.36056408e-01, -1.06087675e+00,  2.86739715e-02,
+       -4.01465992e-01, -3.44948109e-01,  2.23435813e-02, -3.62530954e-01,
+        5.45475654e-01,  2.27823216e-01,  9.53630712e-01,  5.35887567e-01,
+       -6.10311831e-01,  6.17372490e-02, -2.04249706e-01, -1.79536034e-01,
+        2.12061975e-01,  2.07220317e-01, -3.45387248e-01,  9.13524367e-01,
+       -4.02466205e-01,  1.24813452e-01, -7.66437303e-01, -3.31384784e-01,
+        1.23884276e+00, -3.84409591e-01,  5.70537946e-01, -6.67219212e-01,
+       -1.00157932e-01,  1.05195470e-01,  2.16033335e-02, -7.87331642e-02,
+        1.12664092e-01,  3.36364013e+00, -5.17985021e-02, -9.46212561e-02,
+       -3.21155124e-01,  8.83219422e-01,  5.17414131e-01, -9.17788641e-01,
+        9.54255254e-01,  9.66722098e-02, -2.83186569e-01,  6.40834976e-01,
+        3.79302934e-02,  3.79892122e-01,  1.90189141e-02, -1.96308173e-01,
+        4.35921344e-01, -2.16169556e-02, -3.61262923e-01,  1.27248703e+00,
+        6.59317491e-01,  1.54871181e-01, -1.55142363e-01,  1.29301062e-01,
+        1.03045027e-01,  1.96364323e+00,  5.36534870e-01, -8.75743298e-01,
+        5.31276356e-02,  8.32810451e-01, -2.32195440e-01, -6.09153607e-02,
+       -3.26832633e-01, -4.58441007e-01, -6.30149690e-01, -5.07203969e-02,
+        5.34712193e-01,  5.41207311e-01, -1.66785575e-01,  1.35691200e-01,
+       -4.18043176e-01, -1.15946584e-01, -2.63782739e-02, -8.20145058e-01,
+        4.97792343e-01,  9.14884940e-03, -3.48527059e-01, -3.93001951e-01,
+        4.51941277e-01,  1.70843902e-01,  7.98079924e-01, -9.15363933e-02,
+        1.34286192e+02]), array([ 4.59910648e+03,  4.99907364e+01,  2.20544144e+01,  6.42173018e+00,
+        8.27477961e+00,  3.17690693e+00,  4.69101692e+01,  3.04854987e+00,
+        4.65702277e+00,  9.68853685e+01,  4.79054116e+00, -8.13954802e-01,
+        2.31517729e+00,  1.11033911e+01,  6.57397187e-01,  1.32871998e+00,
+        3.66851101e+00,  1.40065773e+00, -3.03456854e-02,  1.33916399e+02])]
+now we have established the consisted hierarchy with fanout 16
+now we run the experiment with range_epsilon: 10
+now we run the query [1307,1769)
+the true count is 50
+the hierarchical estimated count is 48.293463
+now we run the query [34,2556)
+the true count is 4747
+the hierarchical estimated count is 4745.694658
+now we run the query [2660,3408)
+the true count is 10
+the hierarchical estimated count is 9.655120
+now we run the query [332,466)
+the true count is 23
+the hierarchical estimated count is 23.457498
+now we run the query [125,188)
+the true count is 123
+the hierarchical estimated count is 122.994000
+now we run the query [159,762)
+the true count is 137
+the hierarchical estimated count is 138.274881
+now we run the query [152,2660)
+the true count is 323
+the hierarchical estimated count is 321.163853
+now we run the query [3513,4293)
+the true count is 5
+the hierarchical estimated count is 4.105541
+now we run the query [80,124)
+the true count is 836
+the hierarchical estimated count is 836.393988
+now we run the query [164,2298)
+the true count is 203
+the hierarchical estimated count is 199.698708
+now we run the query [71,314)
+the true count is 1736
+the hierarchical estimated count is 1739.554627
+now we run the query [177,463)
+the true count is 86
+the hierarchical estimated count is 85.841632
+now we run the query [1702,2556)
+the true count is 56
+the hierarchical estimated count is 54.878065
+now we run the query [1769,2026)
+the true count is 4
+the hierarchical estimated count is 4.785201
+now we run the query [246,463)
+the true count is 41
+the hierarchical estimated count is 41.044156
+now we run the query [502,1442)
+the true count is 45
+the hierarchical estimated count is 41.848040
+now we run the query [411,3513)
+the true count is 230
+the hierarchical estimated count is 226.510007
+now we run the query [1551,1721)
+the true count is 37
+the hierarchical estimated count is 37.902589
+now we run the query [1719,3513)
+the true count is 132
+the hierarchical estimated count is 129.259556
+now we run the query [73,126)
+the true count is 1378
+the hierarchical estimated count is 1378.912931
+now we run the query [86,105)
+the true count is 420
+the hierarchical estimated count is 421.289416
+now we run the query [493,3422)
+the true count is 214
+the hierarchical estimated count is 211.083458
+now we run the query [289,492)
+the true count is 35
+the hierarchical estimated count is 34.450964
+now we run the query [164,1707)
+the true count is 157
+the hierarchical estimated count is 157.652277
+now we run the query [157,197)
+the true count is 36
+the hierarchical estimated count is 35.591652
+now we run the query [212,1875)
+the true count is 164
+the hierarchical estimated count is 162.414251
+now we run the query [46,82)
+the true count is 3413
+the hierarchical estimated count is 3413.719809
+now we run the query [376,1725)
+the true count is 104
+the hierarchical estimated count is 102.556227
+now we run the query [416,1243)
+the true count is 54
+the hierarchical estimated count is 54.822642
+now we run the query [65,508)
+the true count is 2373
+the hierarchical estimated count is 2373.274557
+now we run the query [101,4180)
+the true count is 629
+the hierarchical estimated count is 628.819455
+now we run the query [341,3403)
+the true count is 235
+the hierarchical estimated count is 231.348715
+now we run the query [55,163)
+the true count is 3486
+the hierarchical estimated count is 3484.765123
+now we run the query [159,197)
+the true count is 32
+the hierarchical estimated count is 31.512826
+now we run the query [47,433)
+the true count is 4293
+the hierarchical estimated count is 4293.221429
+now we run the query [119,1725)
+the true count is 335
+the hierarchical estimated count is 335.020497
+now we run the query [376,1204)
+the true count is 56
+the hierarchical estimated count is 54.957790
+now we run the query [76,160)
+the true count is 1210
+the hierarchical estimated count is 1210.717369
+now we run the query [3347,3422)
+the true count is 9
+the hierarchical estimated count is 8.115501
+now we run the query [101,458)
+the true count is 404
+the hierarchical estimated count is 405.640753
+now we run the query [37,502)
+the true count is 4623
+the hierarchical estimated count is 4625.366175
+now we run the query [99,1110)
+the true count is 479
+the hierarchical estimated count is 480.394535
+now we run the query [163,1110)
+the true count is 139
+the hierarchical estimated count is 140.425508
+now we run the query [144,439)
+the true count is 129
+the hierarchical estimated count is 130.935725
+now we run the query [3366,3408)
+the true count is 3
+the hierarchical estimated count is 3.102525
+now we run the query [41,1307)
+the true count is 4579
+the hierarchical estimated count is 4579.723705
+now we run the query [341,1726)
+the true count is 114
+the hierarchical estimated count is 111.802429
+now we run the query [478,538)
+the true count is 13
+the hierarchical estimated count is 13.339191
+now we run the query [79,502)
+the true count is 1098
+the hierarchical estimated count is 1100.916485
+now we run the query [718,723)
+the true count is 2
+the hierarchical estimated count is 2.403746
+now we run the query [1726,2552)
+the true count is 16
+the hierarchical estimated count is 15.004801
+now we run the query [60,163)
+the true count is 2808
+the hierarchical estimated count is 2807.542744
+now we run the query [143,678)
+the true count is 158
+the hierarchical estimated count is 159.700910
+now we run the query [64,215)
+the true count is 2412
+the hierarchical estimated count is 2413.144549
+now we run the query [53,3218)
+the true count is 4059
+the hierarchical estimated count is 4060.000406
+now we run the query [272,2026)
+the true count is 139
+the hierarchical estimated count is 137.266481
+now we run the query [131,137)
+the true count is 17
+the hierarchical estimated count is 15.936179
+now we run the query [45,313)
+the true count is 4353
+the hierarchical estimated count is 4354.633397
+now we run the query [376,458)
+the true count is 10
+the hierarchical estimated count is 10.842048
+now we run the query [119,224)
+the true count is 188
+the hierarchical estimated count is 189.368549
+now we run the query [1722,1734)
+the true count is 5
+the hierarchical estimated count is 4.589051
+now we run the query [512,1091)
+the true count is 29
+the hierarchical estimated count is 28.872069
+now we run the query [3347,3408)
+the true count is 5
+the hierarchical estimated count is 3.834161
+now we run the query [188,723)
+the true count is 105
+the hierarchical estimated count is 105.495084
+now we run the query [1247,2591)
+the true count is 158
+the hierarchical estimated count is 154.468342
+now we run the query [104,1110)
+the true count is 419
+the hierarchical estimated count is 419.736517
+now we run the query [112,2298)
+the true count is 414
+the hierarchical estimated count is 411.205390
+now we run the query [335,522)
+the true count is 35
+the hierarchical estimated count is 35.664684
+now we run the query [702,4569)
+the true count is 201
+the hierarchical estimated count is 196.317175
+now we run the query [878,2026)
+the true count is 65
+the hierarchical estimated count is 65.551587
+now we run the query [37,111)
+the true count is 4298
+the hierarchical estimated count is 4298.997882
+now we run the query [443,826)
+the true count is 40
+the hierarchical estimated count is 38.678313
+now we run the query [762,2556)
+the true count is 80
+the hierarchical estimated count is 77.420014
+now we run the query [247,262)
+the true count is 2
+the hierarchical estimated count is 1.958073
+now we run the query [826,1779)
+the true count is 63
+the hierarchical estimated count is 61.084180
+now we run the query [878,1726)
+the true count is 57
+the hierarchical estimated count is 57.054094
+now we run the query [1177,3403)
+the true count is 172
+the hierarchical estimated count is 170.018432
+now we run the query [411,629)
+the true count is 31
+the hierarchical estimated count is 33.149468
+now we run the query [3422,3513)
+the true count is 1
+the hierarchical estimated count is 0.130893
+now we run the query [108,328)
+the true count is 306
+the hierarchical estimated count is 304.672661
+now we run the query [83,272)
+the true count is 855
+the hierarchical estimated count is 856.366270
+now we run the query [120,177)
+the true count is 145
+the hierarchical estimated count is 146.012157
+now we run the query [87,109)
+the true count is 429
+the hierarchical estimated count is 430.173606
+now we run the query [1204,2015)
+the true count is 57
+the hierarchical estimated count is 55.736271
+now we run the query [135,177)
+the true count is 77
+the hierarchical estimated count is 78.315713
+now we run the query [289,4180)
+the true count is 254
+the hierarchical estimated count is 251.877329
+now we run the query [56,1442)
+the true count is 3502
+the hierarchical estimated count is 3500.839304
+now we run the query [61,72)
+the true count is 1113
+the hierarchical estimated count is 1111.034034
+now we run the query [95,479)
+the true count is 516
+the hierarchical estimated count is 517.552083
+now we run the query [118,139)
+the true count is 100
+the hierarchical estimated count is 100.398794
+now we run the query [163,250)
+the true count is 58
+the hierarchical estimated count is 59.610196
+now we run the query [61,362)
+the true count is 2772
+the hierarchical estimated count is 2771.974318
+now we run the query [36,384)
+the true count is 4610
+the hierarchical estimated count is 4611.170207
+now we run the query [42,118)
+the true count is 4245
+the hierarchical estimated count is 4243.943659
+now we run the query [341,723)
+the true count is 50
+the hierarchical estimated count is 49.803070
+now we run the query [103,627)
+the true count is 408
+the hierarchical estimated count is 411.148591
+now we run the query [723,1875)
+the true count is 70
+the hierarchical estimated count is 67.814292
+now we run the query [69,136)
+the true count is 1788
+the hierarchical estimated count is 1788.966190
+now we run the query [1734,2273)
+the true count is 7
+the hierarchical estimated count is 6.361040
+now we run the query [86,178)
+the true count is 698
+the hierarchical estimated count is 699.118027
+in 100 range queries, the mean absolute err is 1.287199, and the var of err is 0.940712
