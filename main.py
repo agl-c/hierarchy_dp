@@ -1,8 +1,10 @@
 import argparse
-import imp
+# import imp
 from loguru import logger
 import multiprocessing as mp
 import sys
+import time
+import tracemalloc
 import numpy as np
 import pandas
 import matplotlib.pyplot as plt
@@ -57,10 +59,10 @@ NR = [131,148,153,161,65,169,140,150,105,95,150,159,118,142,133,
 111,135]
 # accidential_drug_deaths  normal_data_5000r 49733rows_link_ping
 parser = argparse.ArgumentParser(description='exp of Consist_h method queries') 
-parser.add_argument('--dataset',type=str, default= 'normal_data_5000r', help='specify the name of data in result file')
+parser.add_argument('--dataset',type=str, default= 'normal_data_200000r', help='specify the name of data in result file')
 parser.add_argument('--s', type=int, default=0, help='specify the starting value of the bottom bin edge')
 parser.add_argument('--step', type=int, default=1, help='specify the step value in creating the bottom bin')
-parser.add_argument('--n', type=int, default=191, help='specify the num of bottom level bins')
+parser.add_argument('--n', type=int, default=240000, help='specify the num of bottom level bins')
 parser.add_argument('--num',type=int,default=100,help='specify the number of range queries')
 parser.add_argument('--range_epsilon', type=float, default=1, help='specify the epsilon value for range queries')
 parser.add_argument('--fanout', type=int, default=16, help='specify the fanout value in establishing the hierarchy')
@@ -71,7 +73,7 @@ args = parser.parse_args()
 res_name = f'{args.dataset}_eps_{args.range_epsilon}f_{args.fanout}.txt'
 sys.stdout = open(res_name, 'w')
 
-df = pandas.read_csv(f"./data/{args.dataset}.csv", usecols=[args.x],nrows=5000)
+df = pandas.read_csv(f"../data/{args.dataset}.csv", usecols=[args.x],nrows=5000)
 
 data_o = df.to_numpy()
 n = len(data_o)
@@ -120,38 +122,43 @@ bin_array, bins, patches = ax.hist(sorted_data, bins=range(5002))
 plt.close()
 # in fact, we find most values fall into 0-1000, and we can consider whether to cut the tail
 
-
-print('now we create the hierarchy')
-H = Consist_h(bottom_bin, args)
-# the GS =1, establish and consist
-np.random.seed(42)
-raw_h = H.est_hierarchy(1)
-consist_h = H.consist(raw_h)
-print('now we have established the consisted hierarchy with fanout %d' % args.fanout)
-
-# randomly select range queries or specify all the queries with ml, mr
-
-def range_query_creator():
+def range_query_creator(pre=200):
     type = args.type
     num = args.num
-    l_array = np.zeros(num)
-    r_array = np.zeros(num)
+    l_array = np.zeros(pre)
+    r_array = np.zeros(pre,int)
 
     if type == "uniform":
-        l_array = np.random.choice(unique_data,num,replace=True)
-        for i in range(num):
+        l_array = np.random.choice(unique_data,pre,replace=True)
+        for i in range(pre):
             # make sure r is > l, the problem is when l==r, always ans 0, but that's wrong
             # choose from unique, cannot be the same
-            while(r_array[i] <= l_array[i]):
+            while(r_array[i] < l_array[i]):
                 r_array[i]=np.random.choice(unique_data)
-            print('create a range query [%d,%d]' % (l_array[i],r_array[i]))
-    print("now we create the range queries",l_array,r_array)
-    return l_array, r_array
+            # print('create a range query [%d,%d]' % (l_array[i],r_array[i]))
+        
+        tot = 0 
+        L = []
+        R = []
+        for i in range(pre):
+            if r_array[i] == l_array[i]:
+                continue
+            L.append(l_array[i])
+            R.append(r_array[i])
+            tot += 1
+            if(tot == 100):
+                break
+    print('now we create', args.num, 'range queries:')
+    print('L:', L)
+    print('R:', R)
+    return L, R
 
 
 def run_range_queries(l_array, r_array):
     num = args.num
     err = []
+    
+    print('now we run the experiment with range_epsilon:', args.range_epsilon)
     for i in range(num):
         l = l_array[i]
         r = r_array[i]
@@ -173,9 +180,25 @@ def run_range_queries(l_array, r_array):
     mse = np.var(err)
     print("in %d range queries, the mean absolute err is %f, and the var of err is %f" % (num, mean_err, mse))
 
+np.random.seed(42)
+l_array, r_array = range_query_creator()
 
-print('now we run the experiment with range_epsilon:', args.range_epsilon)
-run_range_queries(NL, NR)
+print('now we create the hierarchy')
+st = time.time()
+tracemalloc.start()
+H = Consist_h(bottom_bin, args)
+# the GS =1, establish and consist
+raw_h = H.est_hierarchy(1)
+consist_h = H.consist(raw_h)
+print('now we have established the consisted hierarchy with fanout %d' % args.fanout)
+
+run_range_queries(l_array, r_array)
+ed = time.time()
+elapse = (ed-st)*1000
+print('the elpased time in hierarchical range-exp is',elapse, "milliseconds")
+
+print(tracemalloc.get_traced_memory())
+tracemalloc.stop()
 
 sys.stdout.close()
 
